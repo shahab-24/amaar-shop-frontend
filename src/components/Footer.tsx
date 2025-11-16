@@ -42,7 +42,8 @@ export default function Footer() {
 
               <div className="min-w-0">
                 <h3 className="text-lg sm:text-xl font-bold truncate">
-                  {brand} আমার শপ
+                  {brand}
+                  <p>আমার শপ</p>
                 </h3>
               </div>
             </div>

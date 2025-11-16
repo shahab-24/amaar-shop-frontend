@@ -78,16 +78,16 @@ export default function CategoriesPage() {
           >
             <Link
               href={`/category/${encodeURIComponent(cat.slug)}`}
-              className="flex flex-col items-center justify-center p-4 sm:p-5 h-full"
+              className="flex flex-col items-center justify-center p-2 sm:p-5 h-full"
             >
-              <div className="relative w-[70px] h-[70px] sm:w-[80px] sm:h-[80px] rounded-full overflow-hidden bg-gray-50 border border-cyan-100 flex items-center justify-center mb-3">
+              <div className="relative w-[70px] h-[70px] sm:w-[80px] sm:h-[80px] rounded-md overflow-hidden bg-gray-50 border border-cyan-100 flex items-center justify-center mb-3">
                 {cat.image ? (
                   <Image
                     src={cat.image}
                     alt={cat.title}
                     fill
                     sizes="100px"
-                    className="object-cover"
+                    className="object-cover w-[250px]"
                   />
                 ) : (
                   <Sparkles className="w-6 h-6 text-cyan-600" />
