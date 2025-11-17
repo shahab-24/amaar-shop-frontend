@@ -329,7 +329,7 @@ export default function SearchPageRTK() {
     <main className="py-10 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto mt-10">
       <div className="mb-8 text-center">
         <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900">
-          Search
+        Choose Your Desire Products
         </h1>
       </div>
 

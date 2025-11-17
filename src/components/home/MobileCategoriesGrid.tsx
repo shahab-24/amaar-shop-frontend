@@ -93,7 +93,7 @@ export default function MobileCategoriesGrid({
                     alt={cat.title}
                     fill
                     className="object-contain"
-                    sizes="(max-width: 640px) 33vw, 20vw"
+                    sizes="(min-width:1024px) 120px, 100vw"
                     // FIX: Add error handling for broken images
                     onError={(e) => {
                       e.currentTarget.src = "/placeholder.png";

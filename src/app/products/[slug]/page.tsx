@@ -132,16 +132,16 @@ export default async function ProductDetailsPage({
             {/* Main image: mobile smaller height so actions appear on screen */}
             <div
               id={`main-img-box-${product._id}`}
-              className="relative w-full rounded-xl overflow-hidden bg-gradient-to-br from-[#F5FDF8] to-[#F5FDF8]"
+              className="relative w-full rounded-xl overflow-hidden bg-gradient-to-br from-[#F5FDF8] to-[#F5FDF8] mt-10"
             >
               {/* responsive heights: mobile compressed, lg uses aspect-square */}
-              <div className="lg:aspect-square lg:h-auto h-44 sm:h-56 relative">
+              <div className="lg:aspect-square lg:h-auto h-40 sm:h-56 relative">
                 {finalGallery[0] ? (
                   <Image
                     src={finalGallery[0]}
                     alt={product.title}
                     fill
-                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 50vw"
+                    sizes="(max-width: 640px) 80vw, (max-width: 1024px) 50vw, 50vw"
                     className="object-cover transition-transform duration-500"
                     priority
                   />
